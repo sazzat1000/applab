@@ -171,6 +171,19 @@ a {
   transition: 0.5s;
 }
 
+button:focus,
+.btn:focus,
+input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+i {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 /* ============ Common CSS End ============ */
 /* ============ Header Start ============ */
 header nav .navbar-brand {
@@ -188,6 +201,10 @@ header nav .navbar-brand .lab {
 
 header nav .navbar-toggler i {
   color: #242f51;
+}
+
+header nav .navbar-toggler i:hover {
+  color: #fcae61;
 }
 
 header nav #menu ul .nav-item {

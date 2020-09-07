@@ -149,6 +149,15 @@ a {
   box-shadow: 0px 0px 10px 0px #22222273;
   transition: 0.5s;
 }
+button:focus,
+.btn:focus,
+input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+i {
+  transition: .5s;
+}
 /* ============ Common CSS End ============ */
 
 /* ============ Header Start ============ */
@@ -167,6 +176,9 @@ header {
     .navbar-toggler {
       i {
         color: $navy;
+      }
+      i:hover {
+        color: $orange;
       }
     }
     #menu {
