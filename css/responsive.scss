@@ -1,0 +1,209 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #banner {
+    .banner-content {
+      h5 {
+        font-size: 17px;
+      }
+      h1 {
+        font-size: 44px;
+      }
+    }
+  }
+  #company {
+    img {
+      margin-bottom: 30px;
+    }
+  }
+  #app {
+    .item {
+      p {
+        width: 75%;
+        margin: auto;
+      }
+    }
+  }
+  #built {
+    .item {
+      p {
+        width: 75%;
+      }
+    }
+    .image-box {
+      img {
+        margin: 0;
+        width: 100%;
+      }
+    }
+    .image-box-2 {
+      img {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+  #faq {
+    #accordion {
+      .card {
+        .card-header {
+          .card-link {
+            font-size: 16px;
+          }
+        }
+        .card-body {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  #jackpot {
+    .intro {
+      h2 {
+        border: none;
+      }
+      p {
+        padding: 0;
+      }
+    }
+  }
+  #code {
+    .code-image {
+      margin-bottom: 25px;
+    }
+  }
+  #price {
+    .price-item {
+      margin-bottom: 20px;
+    }
+  }
+  #client {
+    .image-box {
+      margin-bottom: 15px;
+    }
+  }
+  #faq {
+    #accordion {
+      .card {
+        .card-header {
+          .card-link {
+            font-size: 18px;
+          }
+        }
+        .card-body {
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  header {
+    nav {
+      #menu {
+        ul {
+          .nav-item {
+            padding-left: 0;
+            margin-bottom: 5px;
+          }
+        }
+        .btn {
+          margin-left: 0;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  #download {
+    .intro {
+      img {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #app {
+    .item {
+      padding: 0 15px;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .intro {
+    h2 {
+      font-size: 33px;
+    }
+  }
+  #banner {
+    .banner-content {
+      h1 {
+        font-size: 52px;
+      }
+    }
+  }
+  #feature {
+    .feature-content {
+      .feature-item-container {
+        .item {
+          .icon-box {
+            width: 85%;
+          }
+          .feature-text {
+            p {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  #app {
+    .item {
+      padding: 0;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #banner {
+    .banner-content {
+      h1 {
+        font-size: 52px;
+      }
+    }
+  }
+  #feature {
+    .feature-content {
+      .feature-item-container {
+        .item {
+          .icon-box {
+            width: 190px;
+            background: gold;
+          }
+        }
+      }
+    }
+  }
+  #download {
+    .intro {
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {}

@@ -1,0 +1,670 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+$orange: #fcae61;
+$navy: #242f51;
+$red: #f55767;
+$blue: #2563ff;
+$green: #40975f;
+$white: #fff;
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-thumb {
+  background: $navy;
+}
+/* ============ Common CSS Start ============ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-bottom: 0;
+}
+p {
+  color: #616368;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none !important;
+}
+.intro {
+  h2 {
+    color: $navy;
+    font-size: 38px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+/* Button CSS Start */
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background: $navy;
+  padding: 15px 35px;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+  z-index: 2;
+  border: none;
+}
+.btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25%;
+  width: 120%;
+  background: $orange;
+  transform: translateX(-120%);
+  transition: 0.5s;
+  z-index: -1;
+  border-radius: 50px;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:hover span,
+.btn.active span {
+  transform: translateX(-10%);
+}
+.btn span:nth-child(2) {
+  top: 25%;
+  transition-delay: 0.1s;
+}
+.btn span:nth-child(3) {
+  top: 50%;
+  transition-delay: 0.2s;
+}
+.btn span:nth-child(4) {
+  top: 75%;
+  transition-delay: 0.3s;
+}
+/* Button CSS Start */
+
+/* Item Start */
+.item {
+  margin-bottom: 45px;
+  .icon-box {
+    background: #ffecef;
+    // padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h5 {
+    font-size: 22px;
+    color: $navy;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 16px;
+    color: #616368;
+  }
+}
+.item.cloud {
+  .icon-box {
+    background: #fff6d3;
+  }
+}
+.item.ux {
+  .icon-box {
+    background: rgba(156, 39, 176, 0.2);
+  }
+}
+.item.support {
+  .icon-box {
+    background: rgba(140, 122, 230, 0.2);
+  }
+}
+/* Item End */
+.slick-slide:focus {
+  outline: none;
+}
+/* ============ Common CSS End ============ */
+
+/* ============ Header Start ============ */
+header {
+  nav {
+    .navbar-brand {
+      font-size: 30px;
+      font-weight: 800;
+      .app {
+        color: $orange;
+      }
+      .lab {
+        color: $navy;
+      }
+    }
+    .navbar-toggler {
+      i {
+        color: $navy;
+      }
+    }
+    #menu {
+      ul {
+        .nav-item {
+          padding-left: 15px;
+          .nav-link {
+            color: #242f51;
+            text-transform: capitalize;
+            font-weight: 500;
+            transition: 0.5s;
+          }
+          .nav-link:hover {
+            color: $orange;
+          }
+        }
+      }
+      .btn {
+        margin-left: 50px;
+      }
+    }
+  }
+}
+/* ============ Header End ============ */
+
+/* ============ Banner Start ============ */
+#banner {
+  background: url(../img/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+  margin-bottom: 75px;
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+    }
+  }
+  .banner-content {
+    h5 {
+      background: #e2eaed;
+      display: inline-block;
+      padding-right: 50px;
+      font-size: 20px;
+      border-radius: 50px;
+      color: $navy;
+      margin-bottom: 25px;
+      i {
+        display: inline-block;
+        color: $white;
+        background: $orange;
+        padding: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+    h1 {
+      font-size: 55px;
+      color: $navy;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px;
+      color: #616368;
+      margin-bottom: 40px;
+    }
+  }
+}
+/* ============ Banner End ============ */
+
+/* ============ Company Start ============ */
+#company {
+  text-align: center;
+  margin-bottom: 75px;
+  h6 {
+    font-size: 20px;
+    color: $navy;
+    margin-bottom: 45px;
+  }
+  img {
+    filter: saturate(200%);
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  img:hover {
+    filter: saturate(0);
+  }
+}
+/* ============ Company End ============ */
+
+/* ============ Feature Start ============ */
+#feature {
+  margin-bottom: 50px;
+  .feature-image {
+    img {
+      width: 100%;
+    }
+  }
+  .feature-content {
+    p {
+      margin-bottom: 35px;
+    }
+    .feature-item-container {
+      .item {
+        display: flex;
+        margin-bottom: 0;
+        align-items: center;
+        }
+        .icon-box {
+          width: 150px;
+        }
+        .feature-text {
+          padding-left: 20px;
+          p {
+            width: 70%;
+          }
+        }
+      }
+      .item.prototyping {
+        .icon-box {
+          background: #f4f4ff;
+        }
+        .feature-text {
+          h5 {
+            color: #2563ff;
+          }
+        }
+      }
+      .item.vector {
+        .icon-box {
+          background: #e4ffee;
+        }
+        .feature-text {
+          h5 {
+            color: #40975f;
+          }
+        }
+      }
+    }
+  }
+
+/* ============ Feature End ============ */
+
+/* ============ Jackpot Start ============ */
+#jackpot {
+  margin-bottom: 80px;
+  .intro {
+    margin-bottom: 40px;
+    h2 {
+      border-right: 1px solid #4b4a484b;
+    }
+    p {
+      width: 80%;
+      padding-left: 20px;
+      line-height: 2;
+    }
+  }
+  .item {
+    .icon-box {
+      width: 95px;
+      height: 95px;
+    }
+    p {
+      width: 85%;
+    }
+  }
+  .item.payout {
+    h5 {
+      color: $red;
+    }
+  }
+  .item.network {
+    .icon-box {
+      background: #f4f4ff;
+    }
+    h5 {
+      color: $blue;
+    }
+  }
+  .item.reward {
+    .icon-box {
+      background: #e4ffee;
+    }
+    h5 {
+      color: $green;
+    }
+  }
+}
+/* ============ Jackpot End ============ */
+
+/* ============ Code Start ============ */
+#code {
+  margin-bottom: 45px;
+  .code-image {
+    img {
+      width: 100%;
+    }
+  }
+  .intro {
+    padding-left: 40px;
+    p {
+      width: 85%;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+  }
+}
+/* ============ Code End ============ */
+
+/* ============ App Start ============ */
+#app {
+  margin: 80px 0 60px;
+  .intro {
+    text-align: center;
+    p {
+      margin-bottom: 50px;
+    }
+  }
+  .item {
+    text-align: center;
+    padding: 0 20px;
+    .icon-box {
+      width: 90px;
+      height: 90px;
+      margin: auto;
+    }
+    h5 {
+      margin-top: 25px;
+    }
+  }
+  .item.award {
+    .icon-box {
+      background: #eaf9ff;
+    }
+  }
+  .item.customization {
+    .icon-box {
+      background: rgba(241, 196, 15, 0.25);
+    }
+  }
+}
+/* ============ App End ============ */
+
+/* ============ Built Start ============ */
+#built {
+  margin-bottom: 70px;
+  .intro {
+    margin-bottom: 20px;
+  }
+  .item {
+    p {
+      width: 85%;
+      text-align: justify;
+    }
+  }
+  .image-box {
+    img {
+      margin-left: -50px;
+    }
+  }
+  .image-box-2 {
+    img {
+      margin-left: -180px;
+    }
+  }
+}
+/* ============ Built End ============ */
+
+/* ============ Price Start ============ */
+#price {
+  margin-bottom: 90px;
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .choose-plan {
+    border-radius: 33px;
+    border: 2px solid #ebebeb;
+    padding: 3px;
+    margin-bottom: 30px;
+  }
+  .price-item {
+    text-align: center;
+    background: $white;
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    .price-header {
+      background: #fafbfc;
+      padding: 30px 20px;
+      border-radius: 10px;
+      h6 {
+        font-size: 18px;
+        color: #999ca5;
+        margin-bottom: 10px;
+        .price-value {
+          font-size: 60px;
+          color: $navy;
+          font-weight: 700;
+        }
+      }
+      h5 {
+        font-size: 20px;
+        color: $navy;
+        font-weight: 600;
+      }
+      p {
+        color: #999ca5;
+      }
+    }
+    .price-list {
+      padding: 30px 20px;
+      ul {
+        margin-bottom: 35px;
+        li {
+          font-size: 16px;
+          color: #999ca5;
+          margin-bottom: 15px;
+        }
+      }
+      .or {
+        display: block;
+        color: $navy;
+        margin-top: 10px;
+      }
+    }
+  }
+  .price-item:hover {
+    border-color: transparent;
+  }
+}
+/* ============ Price End ============ */
+
+/* ============ Client Start ============ */
+#client {
+  margin-bottom: 110px;
+  .intro {
+    margin-bottom: 25px;
+  }
+  .image-box {
+    img {
+      width: 100%;
+    }
+  }
+  .client-slider {
+    position: relative;
+    .client-content {
+      .star {
+        margin-bottom: 15px;
+        i {
+          color: $orange;
+          font-size: 18px;
+          display: inline-block;
+          margin-right: 3px;
+        }
+      }
+      h6 {
+        color: $navy;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+      .client-info {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .client-image {
+          img {
+            border-radius: 50%;
+          }
+        }
+        .client-text {
+          padding-left: 20px;
+          .client-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+          .client-job {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    .arrow {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      font-size: 18px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: #eff3f8;
+      color: $navy;
+      border-radius: 50%;
+      transition: 0.5s;
+    }
+    .arrow.arrow-left {
+      right: 70px;
+      z-index: 99;
+    }
+    .arrow:hover {
+      color: #eff3f8;
+      background: $navy;
+    }
+  }
+}
+/* ============ Client End ============ */
+
+/* ============ FAQ Start ============ */
+#faq {
+  margin-bottom: 60px;
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #accordion {
+    .card {
+      border: none;
+      margin-bottom: 15px;
+      .card-header {
+        background: #f5f7fa;
+        border: none;
+        .card-link {
+          display: block;
+          position: relative;
+          font-size: 20px;
+          color: $navy;
+          font-weight: 600;
+        }
+        .card-link::after {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          font-size: 30px;
+          color: $navy;
+          line-height: 0;
+          font-weight: 300;
+        }
+        .card-link::after {
+          content: "-";
+        }
+        .card-link.collapsed::after {
+          content: "+";
+        }
+      }
+      .card-body {
+        background: #f5f7fa;
+        p {
+          color: #616368;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}
+/* ============ FAQ End ============ */
+
+/* ============ Download Start ============ */
+#download {
+  padding: 40px 0;
+  .intro {
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 35px;
+    }
+    img {
+      margin-right: 20px;
+    }
+  }
+  .image-box {
+    img {
+      width: 100%;
+    }
+  }
+}
+/* ============ Download End ============ */
+
+/* ============ Footer Start ============ */
+footer {
+  background: $navy;
+  padding: 40px 0 20px;
+  text-align: center;
+  h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    .app {
+      color: $orange;
+    }
+    .lab {
+      color: $white;
+    }
+  }
+  .links {
+    i {
+      font-size: 30px;
+      color: #6a7385;
+      margin: 0 10px;
+      transition: 0.5s;
+    }
+    i:hover {
+      color: $white;
+    }
+  }
+}

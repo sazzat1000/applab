@@ -1,0 +1,109 @@
+@media (max-width: 575.98px) {
+  #banner .banner-content h5 {
+    font-size: 17px;
+  }
+  #banner .banner-content h1 {
+    font-size: 44px;
+  }
+  #company img {
+    margin-bottom: 30px;
+  }
+  #app .item p {
+    width: 75%;
+    margin: auto;
+  }
+  #built .item p {
+    width: 75%;
+  }
+  #built .image-box img {
+    margin: 0;
+    width: 100%;
+  }
+  #built .image-box-2 img {
+    margin: 0;
+    width: 100%;
+  }
+  #faq #accordion .card .card-header .card-link {
+    font-size: 16px;
+  }
+  #faq #accordion .card .card-body p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #jackpot .intro h2 {
+    border: none;
+  }
+  #jackpot .intro p {
+    padding: 0;
+  }
+  #code .code-image {
+    margin-bottom: 25px;
+  }
+  #price .price-item {
+    margin-bottom: 20px;
+  }
+  #client .image-box {
+    margin-bottom: 15px;
+  }
+  #faq #accordion .card .card-header .card-link {
+    font-size: 18px;
+  }
+  #faq #accordion .card .card-body p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header nav #menu ul .nav-item {
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
+  header nav #menu .btn {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  #download .intro img {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #app .item {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .intro h2 {
+    font-size: 33px;
+  }
+  #banner .banner-content h1 {
+    font-size: 52px;
+  }
+  #feature .feature-content .feature-item-container .item .icon-box {
+    width: 85%;
+  }
+  #feature .feature-content .feature-item-container .item .feature-text p {
+    width: 100%;
+  }
+  #app .item {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #banner .banner-content h1 {
+    font-size: 52px;
+  }
+  #feature .feature-content .feature-item-container .item .icon-box {
+    width: 190px;
+    background: gold;
+  }
+  #download .intro h2 {
+    font-size: 36px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
