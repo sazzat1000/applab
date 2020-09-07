@@ -138,6 +138,17 @@ a {
 .slick-slide:focus {
   outline: none;
 }
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  // padding: 15px 0 !important;
+  box-shadow: 0px 0px 10px 0px #22222273;
+  transition: 0.5s;
+}
 /* ============ Common CSS End ============ */
 
 /* ============ Header Start ============ */
@@ -168,7 +179,8 @@ header {
             font-weight: 500;
             transition: 0.5s;
           }
-          .nav-link:hover {
+          .nav-link:hover,
+          .nav-link.active {
             color: $orange;
           }
         }
@@ -230,7 +242,6 @@ header {
 /* ============ Company Start ============ */
 #company {
   text-align: center;
-  margin-bottom: 75px;
   h6 {
     font-size: 20px;
     color: $navy;
@@ -249,6 +260,7 @@ header {
 
 /* ============ Feature Start ============ */
 #feature {
+  padding-top: 75px;
   margin-bottom: 50px;
   .feature-image {
     img {
@@ -402,7 +414,6 @@ header {
 
 /* ============ Built Start ============ */
 #built {
-  margin-bottom: 70px;
   .intro {
     margin-bottom: 20px;
   }
@@ -427,7 +438,7 @@ header {
 
 /* ============ Price Start ============ */
 #price {
-  margin-bottom: 90px;
+  padding-top: 70px;
   .intro {
     text-align: center;
     margin-bottom: 40px;
@@ -490,8 +501,8 @@ header {
 /* ============ Price End ============ */
 
 /* ============ Client Start ============ */
-#client {
-  margin-bottom: 110px;
+#testimonial {
+  padding-top: 90px;
   .intro {
     margin-bottom: 25px;
   }
@@ -571,6 +582,7 @@ header {
 
 /* ============ FAQ Start ============ */
 #faq {
+  padding-top: 110px;
   margin-bottom: 60px;
   .intro {
     text-align: center;

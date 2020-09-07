@@ -158,6 +158,19 @@ a {
   outline: none;
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px #22222273;
+          box-shadow: 0px 0px 10px 0px #22222273;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 /* ============ Common CSS End ============ */
 /* ============ Header Start ============ */
 header nav .navbar-brand {
@@ -189,7 +202,8 @@ header nav #menu ul .nav-item .nav-link {
   transition: 0.5s;
 }
 
-header nav #menu ul .nav-item .nav-link:hover {
+header nav #menu ul .nav-item .nav-link:hover,
+header nav #menu ul .nav-item .nav-link.active {
   color: #fcae61;
 }
 
@@ -251,7 +265,6 @@ header nav #menu .btn {
 /* ============ Company Start ============ */
 #company {
   text-align: center;
-  margin-bottom: 75px;
 }
 
 #company h6 {
@@ -276,6 +289,7 @@ header nav #menu .btn {
 /* ============ Company End ============ */
 /* ============ Feature Start ============ */
 #feature {
+  padding-top: 75px;
   margin-bottom: 50px;
 }
 
@@ -433,10 +447,6 @@ header nav #menu .btn {
 
 /* ============ App End ============ */
 /* ============ Built Start ============ */
-#built {
-  margin-bottom: 70px;
-}
-
 #built .intro {
   margin-bottom: 20px;
 }
@@ -457,7 +467,7 @@ header nav #menu .btn {
 /* ============ Built End ============ */
 /* ============ Price Start ============ */
 #price {
-  margin-bottom: 90px;
+  padding-top: 70px;
 }
 
 #price .intro {
@@ -533,45 +543,45 @@ header nav #menu .btn {
 
 /* ============ Price End ============ */
 /* ============ Client Start ============ */
-#client {
-  margin-bottom: 110px;
+#testimonial {
+  padding-top: 90px;
 }
 
-#client .intro {
+#testimonial .intro {
   margin-bottom: 25px;
 }
 
-#client .image-box img {
+#testimonial .image-box img {
   width: 100%;
 }
 
-#client .client-slider {
+#testimonial .client-slider {
   position: relative;
 }
 
-#client .client-slider .client-content .star {
+#testimonial .client-slider .client-content .star {
   margin-bottom: 15px;
 }
 
-#client .client-slider .client-content .star i {
+#testimonial .client-slider .client-content .star i {
   color: #fcae61;
   font-size: 18px;
   display: inline-block;
   margin-right: 3px;
 }
 
-#client .client-slider .client-content h6 {
+#testimonial .client-slider .client-content h6 {
   color: #242f51;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
-#client .client-slider .client-content p {
+#testimonial .client-slider .client-content p {
   margin-bottom: 25px;
 }
 
-#client .client-slider .client-content .client-info {
+#testimonial .client-slider .client-content .client-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,25 +591,25 @@ header nav #menu .btn {
   position: relative;
 }
 
-#client .client-slider .client-content .client-info .client-image img {
+#testimonial .client-slider .client-content .client-info .client-image img {
   border-radius: 50%;
 }
 
-#client .client-slider .client-content .client-info .client-text {
+#testimonial .client-slider .client-content .client-info .client-text {
   padding-left: 20px;
 }
 
-#client .client-slider .client-content .client-info .client-text .client-name {
+#testimonial .client-slider .client-content .client-info .client-text .client-name {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#client .client-slider .client-content .client-info .client-text .client-job {
+#testimonial .client-slider .client-content .client-info .client-text .client-job {
   font-size: 17px;
 }
 
-#client .client-slider .arrow {
+#testimonial .client-slider .arrow {
   position: absolute;
   right: 0;
   bottom: 20px;
@@ -615,12 +625,12 @@ header nav #menu .btn {
   transition: 0.5s;
 }
 
-#client .client-slider .arrow.arrow-left {
+#testimonial .client-slider .arrow.arrow-left {
   right: 70px;
   z-index: 99;
 }
 
-#client .client-slider .arrow:hover {
+#testimonial .client-slider .arrow:hover {
   color: #eff3f8;
   background: #242f51;
 }
@@ -628,6 +638,7 @@ header nav #menu .btn {
 /* ============ Client End ============ */
 /* ============ FAQ Start ============ */
 #faq {
+  padding-top: 110px;
   margin-bottom: 60px;
 }
 
